@@ -42,12 +42,23 @@
             transform: translate(-50%, -50%);
             margin: 0;
         }
+        h1 {
+            font-size: 3rem; /* Ajustando o tamanho do nome */
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 1.5rem; /* Ajustando o tamanho da profissão */
+        }
+        .header-content {
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro para melhorar a visibilidade do texto */
+            padding: 20px;
+        }
         .about-photo {
             width: 250px; /* Ajustando a imagem de perfil */
             height: 250px;
             border-radius: 50%;
             display: block;
-            margin: 20px auto;
+            margin: 40px auto 20px auto; /* Movendo a foto para baixo */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
         h1, h2 {
@@ -126,11 +137,16 @@
         <div class="header">
             <img src="https://github.com/adri-create/Portfolio-adriele/blob/main/adriele%20G.jpg?raw=true?" 
                  alt="Adriele Delmira Gonçalves" class="header-image">
-            <h1>Adriele Delmira Gonçalves</h1>
-            <h2>📊 Analista de Dados</h2>
-            <p>📍 Taboão da Serra - SP | 📧 <a href="mailto:adrielegoncalvesccb1@gmail.com">adrielegoncalvesccb1@gmail.com</a></p>
-            <p>🔗 <a href="https://www.linkedin.com/in/adrielegoncalvesccb1" target="_blank">LinkedIn</a> | 📱 (11) 99908-2819</p>
+            <div class="header-content">
+                <h1>Adriele Delmira Gonçalves</h1>
+                <h2>📊 Analista de Dados</h2>
+                <p>📍 Taboão da Serra - SP | 📧 <a href="mailto:adrielegoncalvesccb1@gmail.com">adrielegoncalvesccb1@gmail.com</a></p>
+                <p>🔗 <a href="https://www.linkedin.com/in/adrielegoncalvesccb1" target="_blank">LinkedIn</a> | 📱 (11) 99908-2819</p>
+            </div>
         </div>
+
+        <img src="https://github.com/adri-create/Portfolio-adriele/blob/main/adriele%20G.jpg?raw=true" 
+             alt="Adriele Delmira Gonçalves" class="about-photo">
 
         <h2>Sobre Mim</h2>
         <p>Sou apaixonada por tecnologia e dados, com experiência na análise e visualização de informações estratégicas. 
