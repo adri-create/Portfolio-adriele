@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Portifólio - Analíse de Dados </title>
+  <title>ADRIELE DELMIRA GONÇALVES</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     /* Estilo Global */
     body {
@@ -14,6 +15,7 @@
       color: #333;
       line-height: 1.6;
     }
+
     /* Cabeçalho Moderno */
     .header {
       background: linear-gradient(45deg, #003366, #66ccff); /* Azul Marinho para Azul Claro */
@@ -32,12 +34,22 @@
     }
     .header .title h1 {
       margin: 10px 0;
-      font-size: 4em; /* Aumentei o tamanho do título */
+      font-size: 4em;
     }
     .header .title p {
       margin: 0;
-      font-size: 1.2em;
+      font-size: 2.5em;
     }
+
+    /* Centralizar título do Projetos */
+    .portfolio-title {
+      text-align: center;
+      font-size: 3.1em;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #003366;
+    }
+
     /* Container do Conteúdo */
     .container {
       max-width: 1000px;
@@ -52,7 +64,8 @@
       z-index: 1;
     }
     h1, h2, h3 {
-      color: #003366; /* Azul Marinho */
+      color: #003366;
+      font-size: 2.5em;
     }
     ul {
       list-style-type: none;
@@ -62,13 +75,20 @@
       margin: 5px 0;
     }
     .contact a {
-      color: #66ccff; /* Azul Claro */
+      color: #66ccff;
       text-decoration: none;
       transition: color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
     }
     .contact a:hover {
-      color: #003366; /* Azul Marinho */
+      color: #003366;
     }
+    .contact i {
+      margin-right: 10px;
+    }
+
+    /* Imagens dos projetos */
     .portfolio img {
       width: 100%;
       max-width: 600px;
@@ -77,6 +97,7 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     .iframe-container {
       text-align: center;
       margin: 20px 0;
@@ -87,6 +108,7 @@
       border: none;
       border-radius: 10px;
     }
+
     /* Responsividade */
     @media (max-width: 768px) {
       .container {
@@ -96,16 +118,17 @@
         height: 350px;
       }
       .header .title h1 {
-        font-size: 2em;
+        font-size: 2.5em;
       }
       .header .title p {
-        font-size: 1em;
+        font-size: 1.8em;
       }
     }
+
     /* Botão de Contato */
     .button {
       display: inline-block;
-      background-color: #003366; /* Azul Marinho */
+      background-color: #003366;
       padding: 10px 20px;
       color: #fff;
       text-decoration: none;
@@ -114,7 +137,7 @@
       transition: background-color 0.3s ease;
     }
     .button:hover {
-      background-color: #66ccff; /* Azul Claro */
+      background-color: #66ccff;
     }
   </style>
 </head>
@@ -125,21 +148,19 @@
       <img src="https://github.com/adri-create/Portfolio-adriele/blob/main/adriele%20G.jpg?raw=true" alt="Foto de Adriele">
     </div>
     <div class="title">
-      <h1>PORTIFÓLIO</h1>
-      </div>
+      <h1>Análise de Dados</h1>
+      <p>Adriele Delmira Gonçalves</p>
+    </div>
+    <h2 class="portfolio-title">PORTFÓLIO</h2>
   </header>
 
   <!-- Conteúdo Principal -->
   <div class="container">
-    <h1>Adriele Delmira Gonçalves</h1>
     <p>📍 Taboão da Serra - SP | 📧 <a href="mailto:adrielegoncalvesccb1@gmail.com">adrielegoncalvesccb1@gmail.com</a></p>
     <p>🔗 <a href="https://www.linkedin.com/in/adrielegoncalvesccb1" target="_blank">LinkedIn</a> | 📱 (11) 99908-2819</p>
 
     <h2>Sobre Mim</h2>
-    <p> Apaixonada por tecnologia e análise de dados. 
-      Atualmente, estudo Gestão da Tecnologia da Informação e Ciências de Dados, e possuo experiência 
-      em análise de processos, suporte técnico e administração de redes. Estou sempre em busca de novos 
-      desafios e aprendizados para aprimorar minhas habilidades e contribuir com soluções inovadoras...</p>
+    <p> Apaixonada por tecnologia e análise de dados. Atualmente, estudo Gestão da Tecnologia da Informação e Ciências de Dados, e possuo experiência em análise de processos, suporte técnico e administração de redes. Estou sempre em busca de novos desafios e aprendizados para aprimorar minhas habilidades e contribuir com soluções inovadoras.</p>
 
     <h2>Formação Acadêmica</h2>
     <ul>
@@ -168,7 +189,7 @@
       <li>✅ Capacidade de trabalhar em equipe e resolver problemas de forma proativa</li>
     </ul>
 
-    <h2>Cursos Completos</h2>
+    <h2>Cursos</h2>
     <ul>
       <li>📜 Sistemas de Informação Administrativos para Empresas (12/2024)</li>
       <li>📜 Gestão e governança na prática: COBIT/ITIL/SCRUM e PMBOK (09/2024)</li>
@@ -188,14 +209,30 @@
       <li>📜 Robótica para Humanoides - Fit Instituto de Tecnologia (02/2023)</li>
     </ul>
 
-    <h2>Projetos & Portfólio</h2>
-        <h2>📌 Dashboard Interativo</h2>
-    <div class="iframe-container">
-      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOWRjZTU4ZWEtZDk5Yi00M2E4LTgwMjEtYzY1YWEyODM5OTllIiwidCI6IjNhNzhiMGNkLTdjOGUtNDkyOS04M2Q1LTE5MGE2Y2MwMTM2NSJ9" allowfullscreen></iframe>
+    <h2 class="portfolio-title">PROJETOS EM POWER BI</h2>
+    
+    <h2>📌 Projeto de Análise de Banco de Dados</h2>
+    <div class="portfolio">
+      <img src="https://github.com/adri-create/Portfolio-adriele/blob/main/cptm.png?raw=true" alt="Projeto de Análise de Banco de Dados">
+    </div>
+
+    <h2>📌 Projeto de Análise de Banco de Dados</h2>
+    <div class="portfolio">
+      <img src="https://github.com/adri-create/Portfolio-adriele/blob/main/fecaf.jpeg?raw=true" alt="Projeto de Análise de Banco de Dados">
+    </div>
+
+    <h2>📌 Projeto de Análise de Banco de Dados</h2>
+    <div class="portfolio">
+      <img src="https://github.com/adri-create/Portfolio-adriele/blob/main/iamspe.jpeg?raw=true" alt="Projeto de Análise de Banco de Dados">
+    </div>
+
+    <h2>📌 Projeto de Análise de Contratos</h2>
+    <div class="portfolio">
+      <img src="https://github.com/adri-create/Portfolio-adriele/blob/main/contratos.png?raw=true" alt="Projeto de Análise de Contratos">
     </div>
 
     <div class="contact">
-      <a href="mailto:adrielegoncalvesccb1@gmail.com" class="button">Entre em Contato</a>
+      <a href="mailto:adrielegoncalvesccb1@gmail.com" class="button"><i class="fas fa-envelope"></i>Entre em Contato</a>
     </div>
   </div>
 </body>
