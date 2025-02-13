@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Adriele Delmira Gonçalves</title>
   <style>
-    /* Estilo Global */
+    /* Estilos Globais */
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
@@ -14,7 +14,7 @@
       color: #333;
       line-height: 1.6;
     }
-    /* Cabeçalho Moderno */
+    /* Cabeçalho */
     .header {
       background: linear-gradient(45deg, #007BFF, #00C6FF);
       color: #fff;
@@ -38,7 +38,7 @@
       margin: 0;
       font-size: 1.2em;
     }
-    /* Container do Conteúdo */
+    /* Container Principal */
     .container {
       max-width: 1000px;
       margin: auto;
@@ -46,75 +46,54 @@
       background: #fff;
       color: #333;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
       margin-top: -30px;
       position: relative;
       z-index: 1;
     }
-    h1, h2, h3 {
+    /* Seção "Sobre Mim" */
+    #sobre-mim {
+      margin: 30px 0;
+    }
+    #sobre-mim h2 {
       color: #007BFF;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 5px 0;
-    }
-    .contact a {
-      color: #00C6FF;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    .contact a:hover {
-      color: #007BFF;
-    }
-    .portfolio img {
-      width: 100%;
-      max-width: 600px;
-      display: block;
-      margin: 10px auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .iframe-container {
       text-align: center;
-      margin: 20px 0;
+      margin-bottom: 20px;
     }
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
+    .about-card {
+      background: #f7f7f7;
+      padding: 20px;
       border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+    .about-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #007BFF;
+    }
+    .about-card p {
+      flex: 1;
+      font-size: 1.1em;
+      color: #333;
+      margin: 0;
     }
     /* Responsividade */
     @media (max-width: 768px) {
-      .container {
-        padding: 10px;
-      }
-      iframe {
-        height: 350px;
-      }
       .header .title h1 {
         font-size: 2em;
       }
       .header .title p {
         font-size: 1em;
       }
-    }
-    /* Botão de Contato */
-    .button {
-      display: inline-block;
-      background-color: #007BFF;
-      padding: 10px 20px;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
-    }
-    .button:hover {
-      background-color: #0056b3;
+      .container {
+        padding: 10px;
+      }
     }
   </style>
 </head>
@@ -122,8 +101,7 @@
   <!-- Cabeçalho com Foto e Título -->
   <header class="header">
     <div class="profile-photo">
-      <!-- Substitua "Adriele.jpg" pelo caminho da sua foto -->
-      <img src="sua-foto.jpg" alt="Foto de Adriele">
+      <img src="dowload/Adriele.jpg" alt="Foto de Adriele">
     </div>
     <div class="title">
       <h1>Análise de Dados</h1>
@@ -133,79 +111,23 @@
 
   <!-- Conteúdo Principal -->
   <div class="container">
-    <h1>Adriele Delmira Gonçalves</h1>
-    <p>📍 Taboão da Serra - SP | 📧 <a href="mailto:adrielegoncalvesccb1@gmail.com">adrielegoncalvesccb1@gmail.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/adrielegoncalvesccb1" target="_blank">LinkedIn</a> | 📱 (11) 99908-2819</p>
+    <!-- Seção "Sobre Mim" -->
+    <section id="sobre-mim">
+      <h2>Sobre Mim</h2>
+      <div class="about-card">
+        <img src="dowload/Adriele.jpg" alt="Foto de Adriele" class="about-photo">
+        <p>
+          Olá, sou Adriele Delmira Gonçalves, apaixonada por tecnologia e análise de dados.
+          Atualmente, estudo Gestão da Tecnologia da Informação e Ciências de Dados, e possuo experiência
+          em análise de processos, suporte técnico e administração de redes. Estou sempre em busca de novos
+          desafios e aprendizados para aprimorar minhas habilidades e contribuir com soluções inovadoras.
+        </p>
+      </div>
+    </section>
 
-    <h2>Sobre Mim</h2>
-    <p> Apaixonada por tecnologia e análise de dados. 
-      Atualmente, estudo Gestão da Tecnologia da Informação e Ciências de Dados, e possuo experiência 
-      em análise de processos, suporte técnico e administração de redes. Estou sempre em busca de novos 
-      desafios e aprendizados para aprimorar minhas habilidades e contribuir com soluções inovadoras...</p>
-
-    <h2>Formação Acadêmica</h2>
-    <ul>
-      <li>🎓 Ciências de Dados - Descomplica (2025 - 2027)</li>
-      <li>🎓 Gestão da Tecnologia da Informação - UniFecaf (2023 - 2025)</li>
-    </ul>
-
-    <h2>Experiência Profissional</h2>
-    <ul>
-      <li><strong>Estagiária em Ambiente de Servidores - Prodesp (2024 - Presente)</strong></li>
-      <li><strong>Auxiliar de Escritório Pleno - JMS Telecom (2021)</strong></li>
-      <li><strong>Assistente Administrativo Financeiro - Genet Telecom (2017 - 2020)</strong></li>
-    </ul>
-
-    <h2>Habilidades Técnicas</h2>
-    <ul>
-      <li>✅ Análise de Dados (Power BI, Power Query, ETL, SQL)</li>
-      <li>✅ Excel Avançado</li>
-      <li>✅ Análise de Processos de TI e Documentação</li>
-      <li>✅ Suporte técnico em hardware e software</li>
-      <li>✅ Diagnóstico e solução de problemas em redes, sistemas operacionais e aplicativos</li>
-      <li>✅ Suporte de Sistemas (Usuários)</li>
-      <li>✅ Inventário, Gap, RDM e ativos de TI</li>
-      <li>✅ Microsoft 365 (SharePoint, PowerPoint, Power Automate, PowerShell)</li>
-      <li>✅ Habilidades de comunicação e atendimento ao cliente</li>
-      <li>✅ Capacidade de trabalhar em equipe e resolver problemas de forma proativa</li>
-    </ul>
-
-    <h2>Cursos Completos</h2>
-    <ul>
-      <li>📜 Sistemas de Informação Administrativos para Empresas (12/2024)</li>
-      <li>📜 Gestão e governança na prática: COBIT/ITIL/SCRUM e PMBOK (09/2024)</li>
-      <li>📜 Ferramentas e tecnologias para mitigação de riscos contratuais em TI (08/2024)</li>
-      <li>📜 Fundamentos básicos do SAP S/4HANA (08/2024)</li>
-      <li>📜 Microsoft Azure Fundamentals (AI-900) (08/2024)</li>
-      <li>📜 Microsoft Azure Fundamentals (AZ-900) (08/2024)</li>
-      <li>📜 AI para Todos | Tendência ou Transformação Definitiva dos Negócios (07/2024)</li>
-      <li>📜 AWS AI Practitioner - Discovery Day (07/2024)</li>
-      <li>📜 Active Directory - Do Zero ao Avançado - Udemy (07/2024)</li>
-      <li>📜 Visão Geral do ITIL®4 (07/2024)</li>
-      <li>📜 Segurança Cibernética - Euax (07/2024)</li>
-      <li>📜 Padrões e Protocolos Seguros - NIC.br (Julho de 2024)</li>
-      <li>📜 Boas Práticas de Cibersegurança - UniFecaf - IBSEC (11/2023)</li>
-      <li>📜 Computação em Nuvem AWS - Ka Solution (03/2024)</li>
-      <li>📜 Fundamentos do SAP - Ka Solution (02/2023)</li>
-      <li>📜 Robótica para Humanoides - Fit Instituto de Tecnologia (02/2023)</li>
-    </ul>
-
-    <h2>Projetos & Portfólio</h2>
-    <div class="portfolio">
-      <h3>📊 Dashboard Comparativo de Preços (Power BI)</h3>
-      <img src="dashboard1.png" alt="Dashboard Comparativo de Preços">
-      <h3>📈 Relatórios Gerenciais (Power BI & Excel)</h3>
-      <img src="dashboard2.png" alt="Relatórios Gerenciais">
-    </div>
-
-    <h2>📌 Dashboard Interativo</h2>
-    <div class="iframe-container">
-      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOWRjZTU4ZWEtZDk5Yi00M2E4LTgwMjEtYzY1YWEyODM5OTllIiwidCI6IjNhNzhiMGNkLTdjOGUtNDkyOS04M2Q1LTE5MGE2Y2MwMTM2NSJ9" allowfullscreen></iframe>
-    </div>
-
-    <div class="contact">
-      <a href="mailto:adrielegoncalvesccb1@gmail.com" class="button">Entre em Contato</a>
-    </div>
+    <!-- Outras Seções do Portfólio -->
+    <!-- Adicione aqui as demais seções do seu portfólio -->
+    
   </div>
 </body>
 </html>
