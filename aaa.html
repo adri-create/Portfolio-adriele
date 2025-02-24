@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Produtos</title>
+    <title>Loja Online - Compras Rápidas</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
+            padding: 0;
+            background-color: #f9f9f9;
         }
-        h1 {
+        header {
+            background-color: #28a745;
+            padding: 20px;
+            color: white;
             text-align: center;
+            font-size: 2em;
         }
         .produtos {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            margin: 20px;
         }
         .produto {
             background-color: #fff;
+            border-radius: 10px;
             border: 1px solid #ddd;
-            border-radius: 5px;
             padding: 20px;
-            margin: 10px;
+            margin: 15px;
             width: 200px;
             text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .produto:hover {
+            transform: translateY(-10px);
         }
         .produto img {
             width: 100%;
             height: auto;
+            border-radius: 5px;
+        }
+        .produto h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .produto p {
+            font-size: 1em;
+            color: #555;
         }
         .produto button {
             padding: 10px;
@@ -39,17 +58,26 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 1em;
             margin-top: 10px;
+            transition: background-color 0.3s;
         }
         .produto button:hover {
             background-color: #218838;
         }
         .carrinho {
-            margin-top: 30px;
+            margin-top: 40px;
             background-color: #fff;
             padding: 20px;
+            border-radius: 10px;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .carrinho h2 {
+            text-align: center;
         }
         .carrinho ul {
             list-style: none;
@@ -63,11 +91,30 @@
             font-weight: bold;
             margin-top: 10px;
         }
+        .formas-pagamento {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .formas-pagamento button {
+            background-color: #007bff;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .formas-pagamento button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
 
-<h1>Bem-vindo à Nossa Loja</h1>
+<header>
+    Loja Online - Compras Rápidas
+</header>
 
 <div class="produtos">
     <div class="produto">
@@ -101,11 +148,18 @@
     <ul id="itensCarrinho"></ul>
     <p class="total">Total: R$0.00</p>
     <button onclick="finalizarCompra()">Finalizar Compra</button>
+
+    <div class="formas-pagamento">
+        <button onclick="selecionarPagamento('Cartão de Crédito')">Cartão de Crédito</button>
+        <button onclick="selecionarPagamento('Boleto')">Boleto</button>
+        <button onclick="selecionarPagamento('Pix')">Pix</button>
+    </div>
 </div>
 
 <script>
     let carrinho = [];
     let total = 0;
+    let formaPagamento = '';
 
     function adicionarAoCarrinho(nomeProduto, precoProduto) {
         carrinho.push({ nome: nomeProduto, preco: precoProduto });
@@ -129,14 +183,22 @@
     }
 
     function finalizarCompra() {
-        if (carrinho.length > 0) {
-            alert(`Compra Finalizada! Total: R$${total.toFixed(2)}`);
+        if (carrinho.length > 0 && formaPagamento !== '') {
+            alert(`Compra Finalizada! Total: R$${total.toFixed(2)}\nForma de Pagamento: ${formaPagamento}`);
             carrinho = [];
             total = 0;
+            formaPagamento = '';
             atualizarCarrinho();
-        } else {
+        } else if (carrinho.length === 0) {
             alert("Seu carrinho está vazio.");
+        } else if (formaPagamento === '') {
+            alert("Por favor, selecione uma forma de pagamento.");
         }
+    }
+
+    function selecionarPagamento(pagamento) {
+        formaPagamento = pagamento;
+        alert(`Forma de pagamento selecionada: ${formaPagamento}`);
     }
 </script>
 
