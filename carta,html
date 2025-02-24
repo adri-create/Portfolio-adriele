@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Apresentação</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #1565c0;
+            font-size: 24px;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        .signature {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: right;
+            color: #1565c0;
+            font-size: 18px;
+        }
+        .container p:first-child {
+            font-weight: bold;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Carta de Apresentação</h1>
+        <p>Prezados recrutadores,</p>
+        <p>Meu nome é Adriele Delmira Goncalves, sou estudante de Gestão da Tecnologia da Informação e Ciência de Dados e atualmente realizo estágio na Prodesp, na equipe CAS1 (Coordenadoria de Ambiente de Servidores). Tenho grande entusiasmo por Análise de Dados, especialmente utilizando o Power BI, e estou sempre em busca de desafios que me permitam aprimorar minhas habilidades técnicas e analíticas.</p>
+        <p>Minha trajetória inclui experiência em Análise de Processos de TI, Automação, Suporte de TI, Administração e Gerenciamento de Redes de Provedores de Internet. Possuo competências em ferramentas como Microsoft Power BI, Excel Avançado, SharePoint e Power Automate, além de conhecimento em ITIL, Scrum e segurança cibernética. Durante minha atuação na Prodesp, venho desenvolvendo habilidades voltadas à gestão de servidores e melhoria de processos públicos, o que tem ampliado minha capacidade de análise e resolução de problemas.</p>
+        <p>Minha jornada com o Power BI começou quando percebi a necessidade de transformar grandes volumes de dados em insights visuais e compreensíveis. Inicialmente, explorei a ferramenta por conta própria, estudando tutoriais e aplicando conceitos em pequenos projetos. Com o tempo, desenvolvi dashboards mais avançados, utilizando DAX e Power Query para modelagem de dados eficiente. Essa dedicação me permitiu criar soluções que otimizam a tomada de decisão e aumentam a eficiência operacional. Hoje, continuo aprimorando meu conhecimento e aplicando-o em cenários reais para gerar impacto positivo nas organizações em que atuo.</p>
+        <p>Além disso, possuo uma sólida capacidade de adaptação a diferentes ambientes e desafios, sempre buscando soluções inovadoras e eficientes. Minha paixão pela tecnologia e pelo aprendizado contínuo me impulsiona a explorar novas ferramentas e metodologias para otimizar processos e gerar resultados significativos.</p>
+        <p>Sou uma profissional dedicada, orientada para resultados e motivada para trabalhar em equipe. Meu lema é: "A obsessão ganha do talento, todas as vezes", e essa mentalidade impulsiona minha constante busca por aprendizado e excelência. Acredito que minha experiência e comprometimento podem agregar valor à sua equipe e contribuir para os objetivos da empresa.</p>
+        <p>Estou à disposição para uma conversa e para compartilhar mais sobre como minha experiência e habilidades podem atender às necessidades da organização. Agradeço desde já pela atenção e aguardo a oportunidade de contribuir com o seu time.</p>
+        <p class="signature">Atenciosamente,<br>Adriele Delmira Goncalves</p>
+    </div>
+</body>
+</html>
